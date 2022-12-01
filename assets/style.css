@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+}
+
+.card {
+  width: 300px;
+  height: 330px;
+  margin: 50px auto;
+  border: 1px solid rgb(142, 131, 131);
+  border-radius: 7px;
+  border: none;
+  box-shadow: 0 17px 34px 0 rgba(44, 39, 56, 0.04), 0 8px 17px 0 rgba(44, 39, 56, 0.02);
+  position: relative;
+}
+.card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+.card a {
+  text-decoration: none;
+}
+.card .content {
+  margin-left: 10px;
+}
+.card .content .price {
+  color: #000;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 5px 0;
+}
+.card .content p {
+  color: rgba(0, 0, 0, 0.861);
+}
+.card .content span {
+  color: rgb(135, 129, 129);
+  line-height: 26px;
+}
+.card .arrows .right-arrow {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(23, 21, 21, 0.114);
+  color: #fff;
+  position: absolute;
+  right: 10px;
+  top: 100px;
+  visibility: hidden;
+}
+.card .arrows .right-arrow i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 9px;
+  font-size: 20px;
+}
+.card .arrows .left-arrow {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(23, 21, 21, 0.114);
+  color: #fff;
+  position: absolute;
+  left: 10px;
+  top: 100px;
+  visibility: hidden;
+}
+.card .arrows .left-arrow i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 9px;
+  font-size: 20px;
+}
+.card .icons img {
+  width: 21px;
+  height: 21px;
+}
+.card .icons .check {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.card .icons .percent {
+  position: absolute;
+  top: 10px;
+  left: 40px;
+}
+.card .icons .repair {
+  position: absolute;
+  top: 10px;
+  left: 70px;
+}
+.card .icons .vip-cont {
+  width: 28px;
+  height: 26px;
+  background-color: #fff;
+  position: absolute;
+  top: 194px;
+  right: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+.card .icons .vip-cont .vip {
+  width: 22px;
+  height: 18px;
+}
+.card .icons .heart {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 25px;
+  height: 22px;
+}
+.card .text-check {
+  padding: 2px 8px;
+  color: #fff;
+  font-size: 11px;
+  border-radius: 5px;
+  background: #76c81c;
+  position: absolute;
+  top: 40px;
+  left: 10px;
+  visibility: hidden;
+}
+.card .text-percent {
+  padding: 2px 8px;
+  color: #fff;
+  font-size: 11px;
+  border-radius: 5px;
+  background: #f5a623;
+  position: absolute;
+  top: 40px;
+  left: 30px;
+  visibility: hidden;
+}
+.card .text-repair {
+  padding: 2px 8px;
+  color: #fff;
+  font-size: 11px;
+  border-radius: 5px;
+  background: #d93d03;
+  position: absolute;
+  top: 40px;
+  left: 60px;
+  visibility: hidden;
+}
+
+.card:hover .left-arrow {
+  visibility: visible;
+}
+
+.card:hover .right-arrow {
+  visibility: visible;
+}
+
+.check-group:hover .text-check {
+  visibility: visible;
+}
+
+.percent-group:hover .text-percent {
+  visibility: visible;
+}
+
+.repair-group:hover .text-repair {
+  visibility: visible;
+}/*# sourceMappingURL=style.css.map */
