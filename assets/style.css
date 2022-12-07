@@ -5,10 +5,67 @@
   font-family: Helvetica, sans-serif;
 }
 
+body {
+  background-color: rgb(206, 198, 198);
+}
+
+.heading {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: #fff;
+  height: 80px;
+  padding: 0 15px;
+}
+header a {
+  text-decoration: none;
+  margin-right: 17px;
+  font-size: 18px;
+}
+header .right-side {
+  display: flex;
+  align-items: center;
+}
+header .right-side .btn-icon {
+  display: flex;
+}
+header .right-side .btn-icon i {
+  font-size: 20px;
+}
+header .right-side .btn-icon .btn-left {
+  padding: 12px;
+  border: 1px solid gray;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+header .right-side .btn-icon .btn-right {
+  padding: 12px;
+  border: 1px solid gray;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  color: blue;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
 .card {
-  width: 300px;
-  height: 330px;
-  margin: 50px auto;
+  width: 22%;
+  background-color: #fff;
   border: 1px solid rgb(142, 131, 131);
   border-radius: 7px;
   border: none;

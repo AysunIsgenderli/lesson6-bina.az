@@ -4,11 +4,68 @@
   box-sizing: border-box;
   font-family: Helvetica, sans-serif;
 }
+body{
+  background-color:rgb(206, 198, 198) ;
+}
+.heading {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: #fff;
+  height: 80px;
+  padding: 0 15px;
+  a {
+    text-decoration: none;
+    margin-right: 17px;
+    font-size: 18px;
+  }
+
+  .right-side {
+    display: flex;
+    align-items: center;
+    .btn-icon {
+      display: flex;
+      i {
+        font-size: 20px;
+      }
+      .btn-left {
+        padding: 12px;
+        border: 1px solid gray;
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;
+      }
+      .btn-right {
+        padding: 12px;
+        border: 1px solid gray;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+        color: blue;
+      }
+    }
+  }
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.cards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
 
 .card {
-  width: 300px;
-  height: 330px;
-  margin: 50px auto;
+  // width: 300px;
+  width: 22%;
+  // height: 330px;
+  // margin: 50px auto;
+  background-color: #fff;
   border: 1px solid rgb(142, 131, 131);
   border-radius: 7px;
   border: none;
@@ -144,8 +201,8 @@
     left: 10px;
     visibility: hidden;
   }
-  .text-percent{
-   padding: 2px 8px;
+  .text-percent {
+    padding: 2px 8px;
     color: #fff;
     font-size: 11px;
     border-radius: 5px;
@@ -155,16 +212,16 @@
     left: 30px;
     visibility: hidden;
   }
-  .text-repair{
-   padding: 2px 8px;
-   color: #fff;
-   font-size: 11px;
-   border-radius: 5px;
-   background: #d93d03;
-   position: absolute;
-   top: 40px;
-   left: 60px;
-   visibility: hidden;
+  .text-repair {
+    padding: 2px 8px;
+    color: #fff;
+    font-size: 11px;
+    border-radius: 5px;
+    background: #d93d03;
+    position: absolute;
+    top: 40px;
+    left: 60px;
+    visibility: hidden;
   }
 }
 
@@ -177,9 +234,9 @@
 .check-group:hover .text-check {
   visibility: visible;
 }
-.percent-group:hover .text-percent{
-   visibility: visible;
+.percent-group:hover .text-percent {
+  visibility: visible;
 }
-.repair-group:hover .text-repair{
-   visibility: visible;
+.repair-group:hover .text-repair {
+  visibility: visible;
 }
